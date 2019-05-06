@@ -1,0 +1,13 @@
+# Memo, I/P
+/work_ignore
+
+# config
+wp-config.php
+
+# Other
+.DS_Store
+wp-content/themes/twentynineteen
+wp-content/themes/twentyseventeen
+wp-content/themes/twentysixteen
+wp-content/themes/wp_theme_8
+
