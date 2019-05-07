@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/*
+Theme Name: Custom_Theme_2
+Theme URL: 
+Description: WordPress Training
+Author: Yuto TANAKA
+Version: 1.0.0
+Tags:
+License:
+Licendse URI:
+*/
+
+body {
+	font-family: 'Avenir', 'Corbel', 'Osaka', sans-serif;
+	font-size: 16px;
+	line-height: 1.7;
+	margin: 0;
+	padding: 0;
+	color: #000000;  /*black*/
+}
+
+/*見出しを全て太文字にする*/
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+/*画像を画面サイズの最大幅で表示*/
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+header {
+	border-bottom: solid 1px #696969;  /*dimgray*/
+}
+
+footer {
+	border-top: solid 1px #696969;  /*dimgray*/
+}
+
+
+/*
+#00bfff;  deepskyblue
+#f0ffff;  azure
+*/
