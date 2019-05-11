@@ -13,5 +13,29 @@
 
 <header>
   <div class="header-inner">
+    <!--タイトルを画像にする場合-->
+    <!-- <div class="site-title"> -->
+      <!-- <h1><a href="<?php echo home_url(); ?>"> -->
+        <!-- <img src="アップロードした画像へのURL" alt="<?php bloginfo( 'name' ); ?>"/> -->
+      <!-- </a></h1> -->
+    <!-- </div> -->
+    <!--タイトルを文字にする場合-->
+    <div class="site-title">
+      <h1><a href="<?php echo home_url(); ?>">
+        <?php bloginfo( 'name' ); ?>
+      </a></h1>
+    </div>
+    <!--スマホ用メニューボタン-->
+    <button type="button" id="navbutton">
+     <i class="fas fa-list-ul"></i><
+    </button>
   </div>
+  <!--ヘッダーメニュー-->
+  <?php wp_nav_menu( array(
+        'theme_location' => 'header-nav',
+        'container' => 'nav',
+        'container_class' => 'header-nav',
+        'container_id' => 'header-nav',
+        'fallback_cb' => ''
+  ) ); ?>
 </header>

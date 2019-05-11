@@ -45,21 +45,21 @@ Licendse URI:
 
 
 /*確認用に一時記述----------*/
-.contents, #sidebar {height: 800px; }
+/*.contents, #sidebar {height: 800px; }*/
  
-header{background-color: #888;}
+/*header{background-color: #888;}*/
  
-.header-inner{ background-color: #ccc; height: 200px;}
+/*.header-inner{ background-color: #ccc; height: 200px;}*/
  
-.container {background-color: #9db2ea; }
+/*.container {background-color: #9db2ea; }*/
  
-.contents {background-color: #a5e2ff; }
+/*.contents {background-color: #a5e2ff; }*/
  
-#sidebar{background-color: #aefffc; }
+/*#sidebar{background-color: #aefffc; }*/
  
-footer{background-color: #777; }
+/*footer{background-color: #777; }*/
  
-.footer-inner{background-color: #ddd; height: 250px; }
+/*.footer-inner{background-color: #ddd; height: 250px; }*/
 /*------------------------*/
 
 
@@ -84,13 +84,158 @@ img {
 	height: auto;
 }
 
+
 header {
-	border-bottom: solid 1px #696969;  /*dimgray*/
+  border-bottom: solid 1px #696969;  /*dimgray*/
+  /*background-color: #bfeaff;*/
+}
+.top-nav-area {
+  background-color: #333;
 }
 
 footer {
 	border-top: solid 1px #696969;  /*dimgray*/
 }
+
+
+/*タイトルを画像にする場合*/
+/*.site-title {
+  text-align: left;
+}
+ 
+.site-title h1 {
+  margin: 0;
+  padding: 10px 5px 0;
+  line-height: 1;
+}
+ 
+.site-title h1 img {
+  width: auto;
+  height: 70px;
+}
+ 
+.site-title a {
+  display: block;
+}*/
+
+
+/*タイトルを文字列にする場合*/
+.site-title {
+  text-align: left;
+}
+ 
+.site-title h1 {
+  font-size: 2.4em;
+  margin: 0;
+  padding: 10px 5px 0;
+}
+ 
+.site-title h1 a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+
+/*スマホ用のメニューボタン*/
+  .header-inner {
+    position: relative;
+  }
+ 
+  #navbutton {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+ 
+  #navbutton:hover {
+    background-color: #ddd;
+  }
+ 
+  #navbutton:focus {
+    outline: none;
+  }
+ 
+  #navbutton i {
+    font-size: 2em;
+    color: #333;
+  }
+
+
+/*ヘッダーナビ*/
+#header-nav {
+  display: none;
+}
+ 
+.header-nav {
+  padding-left: 10px;
+}
+ 
+.header-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+.header-nav li a:before {
+  content: "\f0da";
+  font-family: 'Font Awesome 5 Free';
+  color: #555;
+  font-size: 0.9em;
+  padding-right: 3px;
+}
+ 
+.header-nav li a {
+  display: block;
+  padding: 15px 5px;
+  color: #000;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+}
+ 
+.header-nav li a:hover {
+  opacity: 0.8;
+}
+
+
+
+/*ヘッダーメニューPC閲覧時*/
+@media (min-width: 768px) {
+  #header-nav {
+    display: block!important;
+  }
+  .header-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:0 10px;
+    box-sizing: border-box;
+  }
+  .header-nav ul:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+  .header-nav li {
+    display: inline-block;
+    width: auto;
+  }
+  .header-nav li a {
+    font-size: 1.1em;
+    padding: 5px 10px;
+  }
+  #navbutton {
+    display: none;
+  }
+}
+
 
 
 /*
