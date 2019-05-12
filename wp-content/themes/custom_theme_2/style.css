@@ -406,6 +406,148 @@ footer {
   text-align: center;
 }
 
+.kiji-list {
+  margin: 0 0 15px;
+  border: solid 1px #ddd;
+  background-color: #fff;
+}
+ 
+.kiji-list a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #000;
+}
+ 
+.kiji-list a:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+ 
+.kiji-list a:hover {
+  background-color: #eee;
+}
+ 
+.kiji-list img {
+  float: left;
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+}
+ 
+.kiji-list .text {
+  width: auto;
+  margin-left: 250px;
+}
+ 
+.kiji-list h2 {
+  font-size: 1.05em;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+ 
+.kiji-date {
+  font-size: .8em;
+  margin-bottom: 8px;
+  color: #666;
+}
+ 
+.cat-data {
+  font-size: .6em;
+  padding: 3px 5px;
+  text-align: center;
+  white-space: nowrap;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #464646;
+}
+ 
+.kiji-list p {
+  font-size: .8em;
+  margin: 10px 0 0;
+}
+
+@media (max-width: 599px) {
+  .kiji-list a {
+    padding: 10px;
+  }
+  .kiji-list img {
+    width: 100px;
+    height: 80px;
+  }
+  .kiji-list .text {
+    margin-left: 120px;
+  }
+  .kiji-list h2 {
+    font-size: .95em;
+  }
+  .kiji-date {
+    margin-bottom: 0;
+  }
+  .kiji-list p {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+.pagination {
+  margin: 40px 0 30px;
+  text-align: center;
+}
+ 
+.pagination ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+.pagination li {
+  display: inline-block;
+  width: auto;
+}
+ 
+.pagination li a, .pagination li > span {
+  font-size: .9em;
+  display: block;
+  width: 30px;
+  margin: 0 1px;
+  padding: 5px 0;
+  text-decoration: none;
+  color: #000;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+}
+ 
+.pagination li > span {
+  color: #fff;
+  background-color: #464646;
+}
+ 
+.pagination li a:hover {
+  color: #fff;
+  background-color: #464646;
+}
+ 
+.pagination li .dots {
+  width: 15px;
+  padding: 0;
+  color: #000;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.contents > h1 {
+  font-size: 1.5em;
+  margin: 0 0 20px;
+}
+ 
+@media (max-width: 599px) {
+  .contents > h1 {
+  font-size: 1.3em;
+  }
+}
 
 /*
 #00bfff;  deepskyblue
